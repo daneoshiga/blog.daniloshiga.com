@@ -1,7 +1,7 @@
 Title: Desenvolvimento e Implantação do Wordpress usando Git
 Date: 2012-04-11 14:14
 Author: daniloshiga
-Category: git, meta
+Category: git
 Tags: git, implantação, wordpress
 Slug: desenvolvimento-e-implantacao-do-wordpress-usando-git
 

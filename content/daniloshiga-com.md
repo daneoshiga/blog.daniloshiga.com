@@ -1,7 +1,7 @@
 Title: daniloshiga.com
 Date: 2012-12-22 18:39
 Author: daniloshiga
-Category: git, meta
+Category: git
 Tags: hosting, personal, web
 Slug: daniloshiga-com
 
