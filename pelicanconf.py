@@ -6,7 +6,7 @@ AUTHOR = u'Danilo Shiga'
 SITENAME = u'Danilo Shiga'
 #SITEURL = 'http://daniloshiga.com/testblog'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/Sao_Paulo'
 
 DEFAULT_LANG = u'pt'
 
