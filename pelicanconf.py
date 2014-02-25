@@ -32,5 +32,8 @@ PATH = 'content'
 
 DEFAULT_PAGINATION = 10
 
+# variables used inside theme
+GITHUB_URL = 'https://github.com/daneoshiga/blog.daniloshiga.com'
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
