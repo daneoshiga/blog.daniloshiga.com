@@ -32,6 +32,12 @@ PATH = 'content'
 
 DEFAULT_PAGINATION = 10
 
+STATIC_PATHS = [
+    'extra/favicon.ico',
+]
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+}
 # variables used inside theme
 GITHUB_URL = 'https://github.com/daneoshiga/blog.daniloshiga.com'
 
