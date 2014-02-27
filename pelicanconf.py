@@ -40,6 +40,9 @@ EXTRA_PATH_METADATA = {
 }
 
 CSS_FILE = "wide.css"
+
+THEME = 'themes/notmyidea2'
+
 # variables used inside theme
 GITHUB_URL = 'https://github.com/daneoshiga/blog.daniloshiga.com'
 
