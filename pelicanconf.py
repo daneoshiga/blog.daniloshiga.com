@@ -38,6 +38,8 @@ STATIC_PATHS = [
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
 }
+
+CSS_FILE = "wide.css"
 # variables used inside theme
 GITHUB_URL = 'https://github.com/daneoshiga/blog.daniloshiga.com'
 
