@@ -15,7 +15,7 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}'
+ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
 
 PATH = 'content'
@@ -39,12 +39,20 @@ EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
 }
 
-CSS_FILE = "wide.css"
+#from pelican.plugins import related_posts
+PLUGIN_PATH = '../pelican-plugins'
+PLUGINS = ['googleplus_comments', ]
 
-THEME = 'themes/notmyidea2'
+ASSET_SOURCE_PATHS = (
+    'static/css',
+)
+
+THEME = 'themes/toasted'
+
+DISPLAY_CATEGORIES_ON_MENU = False
 
 # variables used inside theme
-GITHUB_URL = 'https://github.com/daneoshiga/blog.daniloshiga.com'
+# GITHUB_URL = 'https://github.com/daneoshiga/blog.daniloshiga.com'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

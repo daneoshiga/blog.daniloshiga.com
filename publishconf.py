@@ -22,3 +22,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
+# variables used inside theme
+GITHUB_URL = 'https://github.com/daneoshiga/blog.daniloshiga.com'
