@@ -9,4 +9,5 @@ Um exemplo de como gerar um patch de um arquivo mas antes fazendo algum
 tipo de processamento, no caso, usando o sed para remover algumas linhas
 do arquivo, por exemplo
 
+    :::bash
     diff <(/bin/sed '/[regex]/d' arquivo.txt) <(/bin/sed '/[regex]/d' arquivo2.txt) > $patchfile
