@@ -16,7 +16,20 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
-ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}/index.html'
+PAGE_URL = '{slug}'
+PAGE_SAVE_AS = '{slug}.html'
+AUTHOR_URL = 'author/{slug}'
+AUTHOR_SAVE_AS = 'author/{slug}.html'
+CATEGORY_URL = 'category/{slug}'
+CATEGORY_SAVE_AS = 'category/{slug}.html'
+TAG_URL = 'tag/{slug}'
+TAG_SAVE_AS = 'tag/{slug}.html'
+
+PAGINATION_PATTERNS = (
+    (1, '{base_name}/', '{base_name}.html'),
+    (2, '{base_name}/{number}/', '{base_name}/{number}/index.html'),
+)
 
 PATH = 'content'
 
@@ -34,9 +47,11 @@ DEFAULT_PAGINATION = 10
 
 STATIC_PATHS = [
     'extra/favicon.ico',
+    'extra/.htaccess',
 ]
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/favicon.ico': {'path': '.htaccess'},
 }
 
 #from pelican.plugins import related_posts
