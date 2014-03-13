@@ -1,0 +1,17 @@
+html {
+  font-family: 'Arvo', serif;
+}
+
+ol {
+  list-style: none;
+}
+
+h1 a {
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+}
+
+.article-infos {
+  font-size: 80%;
+  color: #888;
+}
