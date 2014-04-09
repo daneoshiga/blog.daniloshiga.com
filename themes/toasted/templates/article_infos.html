@@ -1,11 +1,13 @@
 <footer class="unit one-of-four article-infos">
-        <abbr class="published" title="{{ article.date.isoformat() }}">
+        <time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">
                 {{ article.locale_date }}
-        </abbr>
+        </time>
 
         {% if article.author %}
         <address>
-                Por <a class="url" href="{{ SITEURL }}/{{ article.author.url }}"><span itemprop="author">{{ article.author }}</span></a>
+                Por <a class="url" href="{{ SITEURL }}/{{ article.author.url }}">
+                    <span itemprop="author">{{ article.author }}</span>
+                </a>
         </address>
         {% endif %}
 <p>Em <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>. {% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">get the pdf</a>{% endif %}</p>
