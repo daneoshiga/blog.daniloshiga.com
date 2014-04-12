@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Danilo Shiga'
 SITENAME = u'Danilo Shiga'
-#SITEURL = 'http://daniloshiga.com/testblog'
+SITEURL = 'http://localhost:8000'
+DISQUS_SITENAME = "blog-daniloshiga"
 
 TIMEZONE = 'America/Sao_Paulo'
 
