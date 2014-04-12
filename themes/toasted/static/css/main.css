@@ -25,14 +25,37 @@ a:visited {
   color: #6A4A3C;
 }
 
+/* Code highlight based on
+ * http://kevinyap.ca/2013/12/styling-code-blocks-using-pelican/
+ */
+
 pre {
-  font-family: 'Source Code Pro', Arial, serif;
+  margin-bottom: 0.5em;
+}
+
+.codehilitetable {
+  font-family: "Source Code Pro", monospace;
   font-size: 80%;
-  white-space: pre-wrap;       /* css-3 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  overflow: auto;
+  display: block;
+  border-radius: 3px;
+  margin-bottom: 0.5em;
+}
+
+.linenos {
+  border-right: 1px solid #d9d9d9;
+  padding: 1px 2px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+.codehilite {
+  margin: 0 1em;
+
 }
 
 .article-infos {
