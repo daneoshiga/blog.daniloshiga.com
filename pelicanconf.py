@@ -69,6 +69,8 @@ THEME = 'themes/toasted'
 
 DISPLAY_CATEGORIES_ON_MENU = False
 
+MD_EXTENSIONS = ['codehilite(linenums=True)', 'extra', 'fenced_code']
+
 # variables used inside theme
 # GITHUB_URL = 'https://github.com/daneoshiga/blog.daniloshiga.com'
 
