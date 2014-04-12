@@ -54,7 +54,7 @@ STATIC_PATHS = [
 ]
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
-    'extra/favicon.ico': {'path': '.htaccess'},
+    'extra/.htaccess': {'path': '.htaccess'},
 }
 
 #from pelican.plugins import related_posts
