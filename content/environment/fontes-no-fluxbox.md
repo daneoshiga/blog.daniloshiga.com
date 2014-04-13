@@ -1,7 +1,6 @@
 Title: Fontes no Fluxbox
 Date: 2012-06-20 23:37
 Author: daniloshiga
-Category: environment
 Tags: environment, fluxbox
 Slug: fontes-no-fluxbox
 
@@ -16,15 +15,16 @@ estranhamente renderizadas, fazendo com que eu acabe voltando para o
 Hoje encontrei uma solução aceitável para o problema, para isso, criei o
 arquivo \~/.Xresources com o seguinte conteúdo:
 
-` Xft.dpi: 96 Xft.antialias: true Xft.hinting: true Xft.rgba: rgb Xft.autohint: false Xft.hintstyle: hintslight Xft.lcdfilter: lcddefault`
+    Xft.dpi: 96
+    Xft.antialias: true
+    Xft.hinting: true
+    Xft.rgba: rgb
+    Xft.autohint: false
+    Xft.hintstyle: hintslight
+    Xft.lcdfilter: lcddefault
 
- 
-
-reiniciei o lightdm e agora as fontes renderizadas no aplicativo estão
+Reiniciei o lightdm e agora as fontes renderizadas no aplicativo estão
 muito mais próximas (senão idênticas) ao que estou acostumado em outros
 ambientes gráficos.
 
-fonte: [Fixing ugly Qt fonts in Openbox, Fluxbox, etc. ][]
-
-  [Fixing ugly Qt fonts in Openbox, Fluxbox, etc. ]: http://lovingthepenguin.blogspot.com.br/2011/07/fixing-ugly-qt-fonts-in-openbox-fluxbox.html
-    "Fixing ugly Qt fonts in Openbox, Fluxbox, etc."
+fonte: [Fixing ugly Qt fonts in Openbox, Fluxbox, etc. ](http://lovingthepenguin.blogspot.com.br/2011/07/fixing-ugly-qt-fonts-in-openbox-fluxbox.html)

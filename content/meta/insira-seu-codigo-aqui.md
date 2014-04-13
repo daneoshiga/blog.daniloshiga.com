@@ -1,7 +1,6 @@
 Title: #! /** Insira seu código aqui **/
 Date: 2012-03-30 15:35
 Author: daniloshiga
-Category: meta
 Slug: insira-seu-codigo-aqui
 
 And it has started!

@@ -1,7 +1,6 @@
 Title: Escrita na HD, noatime, nodiratime
 Date: 2013-11-19 12:45
 Author: daniloshiga
-Category: linux
 Tags: mount, performance
 Slug: escrita-na-hd-noatime-nodiratime
 
@@ -14,11 +13,8 @@ de montagem, no meu caso, adicionei tanto no / como no /home
 
  
 
-> UUID=3fbf7e07-a761-4780-8e08-b7a5a9b9322d / ext4
-> noatime,nodiratime,errors=remount-ro 0 1
->
-> UUID=55960f8a-716a-475f-9b52-180d1df7aaa7 /home ext4
-> noatime,nodiratime,defaults 0 2
+    UUID=3fbf7e07-a761-4780-8e08-b7a5a9b9322d / ext4 noatime,nodiratime,errors=remount-ro 0 1
+    UUID=55960f8a-716a-475f-9b52-180d1df7aaa7 /home ext4 noatime,nodiratime,defaults 0 2
 
 De acordo com o manual do mount, esse é o significado dessas
 configurações:

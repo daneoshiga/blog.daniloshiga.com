@@ -1,7 +1,6 @@
 Title: Separando arquivos numerados
 Date: 2012-10-06 07:26
 Author: daniloshiga
-Category: bash
 Tags: quick, script, simple
 Slug: separando-arquivos-numerados
 

@@ -1,7 +1,6 @@
 Title: Um gitignore para a todos governar
 Date: 2012-04-18 16:24
 Author: daniloshiga
-Category: git
 Tags: configuração
 Slug: um-gitignore-para-a-todos-governar
 

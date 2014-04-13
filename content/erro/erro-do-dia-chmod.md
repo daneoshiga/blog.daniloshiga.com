@@ -1,7 +1,6 @@
 Title: Erro do dia: chmod *
 Date: 2012-08-24 06:26
 Author: daniloshiga
-Category: erro
 Tags: erro
 Slug: erro-do-dia-chmod
 

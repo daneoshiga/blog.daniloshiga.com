@@ -1,7 +1,6 @@
 Title: ScribeFire
 Date: 2012-05-31 23:45
 Author: daniloshiga
-Category: meta
 Tags: escrever, offline, wordpress
 Slug: scribefire-3
 

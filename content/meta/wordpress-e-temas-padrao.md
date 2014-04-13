@@ -1,7 +1,6 @@
 Title: Wordpress e temas padrão
 Date: 2014-01-16 12:21
 Author: daniloshiga
-Category: meta
 Tags: css, wordpress
 Slug: wordpress-e-temas-padrao
 
@@ -17,7 +16,6 @@ fazer algo baseado no temas [roots][].
 No caso, as alterações que fiz no CSS foram as seguintes:
 
     :::css
-    {.wrap:true .lang:css .decode:true}
     .entry-title {
     text-transform: none;
     }

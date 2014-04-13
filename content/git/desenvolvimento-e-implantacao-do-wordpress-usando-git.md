@@ -1,7 +1,6 @@
 Title: Desenvolvimento e Implantação do Wordpress usando Git
 Date: 2012-04-11 14:14
 Author: daniloshiga
-Category: git
 Tags: git, implantação, wordpress
 Slug: desenvolvimento-e-implantacao-do-wordpress-usando-git
 
@@ -22,6 +21,7 @@ atualizado de 30 em 30 minutos.
 Clonando o repositório do wordpress, selecionando a versão que será
 usada e criando um branch de desenvolvimento a partir dela:
 
+    :::bash
     git clone https://github.com/markjaquith/WordPress.git blog.daniloshiga.com
     git checkout origin/3.3-branch
     git checkout -b dev
@@ -29,9 +29,10 @@ usada e criando um branch de desenvolvimento a partir dela:
 Adicionando o tema "roots" como um "submódulo falso" (ou seja, sem o uso
 dos "submodules") do git.
 
+    :::bash
     cd wp-content/themes
-     git clone https://github.com/retlehs/roots.git
-     git add roots/
+    git clone https://github.com/retlehs/roots.git
+    git add roots/
 
 Fiz desse modo para facilitar a implantação, de modo que tanto o
 wordpress quanto o tema fiquem no mesmo repositório, sem haver a
@@ -46,6 +47,7 @@ produção com o usado durante o desenvolvimento.
 do comando "git init --bare" faz com que o repositório seja criado na
 pasta atual, e não criada uma outra pasta .git com ele.
 
+    :::bash
     mkdir blog.git && cd blog.git
     git init --bare
 
@@ -72,6 +74,7 @@ no servidor para bloquear o acesso ao repositório.
 
 Feito isso, basta adicionar o repositório
 
+    :::bash
     git remote add prod ssh://[usuario]@[host]/[caminho_repositório]/blog.git
     git push prod +dev:refs/heads/dev
 
@@ -102,14 +105,12 @@ separado, tornando o controle das alterações complicado nesse sentido.
 
 ### Referências:
 
-<http://www.saintsjd.com/2011/03/automated-deployment-of-wordpress-using-git/>
-(parte da solução, só que usa git pull)  
-<http://webxl.net/2011/03/10/managing-wordpress-with-git/> (solução
-usando checkout)  
+[Parte da solução, só que usa git pull](http://www.saintsjd.com/2011/03/automated-deployment-of-wordpress-using-git/)
 
-[http://clintberry.com/2011/speed-up-your-wordpress-development-cycle-with-git/  
-][]<http://debuggable.com/posts/git-fake-submodules:4b563ee4-f3cc-4061-967e-0e48cbdd56cb>
+[Solução usando checkout](http://webxl.net/2011/03/10/managing-wordpress-with-git/) 
+
+[Speed Up Your WordPress Development Cycle With Git ](http://clintberry.com/2011/speed-up-your-wordpress-development-cycle-with-git/  ) 
+
+[Git Fake Submodules](http://debuggable.com/posts/git-fake-submodules:4b563ee4-f3cc-4061-967e-0e48cbdd56cb)
 
   [github]: https://github.com/markjaquith/WordPress
-  [http://clintberry.com/2011/speed-up-your-wordpress-development-cycle-with-git/  
- ]: http://clintberry.com/2011/speed-up-your-wordpress-development-cycle-with-git/

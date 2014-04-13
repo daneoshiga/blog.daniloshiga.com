@@ -1,7 +1,6 @@
 Title: Quedas de Força, Boot e Teclados USBs
 Date: 2013-03-20 11:00
 Author: daniloshiga
-Category: meta
 Slug: quedas-de-forca-boot-e-teclados-usbs
 
 A informática é uma ciência oculta, certos erros não tem muita relação
@@ -16,21 +15,11 @@ enigmática:
 Já comecei a acreditar que a queda de força teria afetado o processador,
 porém, após uma busca no Google, achei uma solução inusitada:
 
- 
-
 http://forums.opensuse.org/english/get-technical-help-here/hardware/460402-boot-panic-2.html
 
- 
-
- 
-
-It was my wireless keyboard. Not sure if its just the battery or
+_It was my wireless keyboard. Not sure if its just the battery or
 something else. But if i don't plug it in, everything is booting just
-fine. Weird, isn't it.
-
- 
-
- 
+fine. Weird, isn't it._
 
 Removi então o teclado e o mouse das USBs, e incrivelmente o boot
 ocorreu sem problemas.

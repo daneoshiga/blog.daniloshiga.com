@@ -1,7 +1,6 @@
 Title: Vimpress, postando no wordpress pelo vim
 Date: 2012-09-26 09:59
 Author: daniloshiga
-Category: vim
 Tags: blogging, vim-scripts
 Slug: vimpress-postando-no-wordpress-pelo-vim
 

@@ -1,7 +1,6 @@
 Title: gerar patch com pré-processamento do arquivo
 Date: 2012-08-28 14:49
 Author: daniloshiga
-Category: bash
 Tags: diff, redirect, sed
 Slug: gerar-patch-com-pre-processamento-do-arquivo
 
