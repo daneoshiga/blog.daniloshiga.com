@@ -5,9 +5,7 @@
 
         {% if article.author %}
         <address>
-                Por <a class="url" href="{{ SITEURL }}/{{ article.author.url }}">
-                    <span itemprop="author">{{ article.author }}</span>
-                </a>
+                Por <span itemprop="author">{{ AUTHOR }}</span>
         </address>
         {% endif %}
 <p>Em <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>. {% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">get the pdf</a>{% endif %}</p>
