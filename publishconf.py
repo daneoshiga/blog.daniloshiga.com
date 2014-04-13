@@ -21,6 +21,6 @@ DELETE_OUTPUT_DIRECTORY = True
 # Following items are often useful when publishing
 
 #DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+GOOGLE_ANALYTICS = "UA-35074003-3"
 # variables used inside theme
 GITHUB_URL = 'https://github.com/daneoshiga/blog.daniloshiga.com'
