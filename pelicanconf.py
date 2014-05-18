@@ -48,6 +48,7 @@ PATH = 'content'
 DEFAULT_PAGINATION = 10
 
 STATIC_PATHS = [
+    'images',
     'extra/favicon.ico',
     'extra/.htaccess',
 ]
