@@ -57,8 +57,8 @@ EXTRA_PATH_METADATA = {
 }
 
 #from pelican.plugins import related_posts
-PLUGIN_PATH = '../pelican-plugins'
-PLUGINS = ['googleplus_comments', ]
+#PLUGIN_PATH = '../pelican-plugins'
+#PLUGINS = ['googleplus_comments', ]
 
 ASSET_SOURCE_PATHS = (
     'static/css',
