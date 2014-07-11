@@ -9,6 +9,8 @@ DISQUS_SITENAME = "blog-daniloshiga"
 
 TIMEZONE = 'America/Sao_Paulo'
 
+TYPOGRIFY = True
+
 DEFAULT_LANG = u'pt'
 
 # Feed generation is usually not desired when developing
