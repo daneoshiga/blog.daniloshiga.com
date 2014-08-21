@@ -1,5 +1,5 @@
 Title: Introdução aos Testes no Django
-Date: 2014-11-07
+Date: 2014-07-11
 Author: daniloshiga
 Tags: python, django, testes
 Slug: introducao-a-testes-no-django
