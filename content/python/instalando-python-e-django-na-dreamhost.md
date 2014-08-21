@@ -77,6 +77,10 @@ Os pontos importantes dele são:
   sys.path.insert, que atualiza o path adicionando novos valores no começo do
   mesmo.
 
+- Adicionar qualquer variável de ambiente necessária para o sistema no ambiente
+  através do os.environ, no caso, estou setando o arquivo settings a ser usado
+  pelo projeto.
+
 - A criação da variável "application" que vai ser usada pelo passenger para
   rodar a aplicação.
 
@@ -112,6 +116,20 @@ settings/dreamhost.py
                           'public', 'media')
 
     MEDIA_URL = '/media/'
+
+
+Do modo que está acima, essas pastas vão ficar em
+/home/user/example/example.daniloshiga.com/public/static e /public/media, mas a
+URL delas é apenas /static e /media.
+
+Depois disso, para reiniciar o passenger toda vez que houver uma novidade no
+projeto, é necessário alterar a data de modificação de um arquivo restart.txt
+dentro da pasta tmp/ do domínio, por exemplo, através do comando:
+
+    touch ~/example.daniloshiga.com/tmp/restart.txt
+
+Se isso não for suficiente, ainda é possível matar os processor do python que
+estiverem rodando, usando o comando `pkil python`.
 
 [IaaS]: http://en.wikipedia.org/wiki/Infrastructure_as_a_service#Infrastructure_as_a_service_.28IaaS.29
 [como já foi feito em alguns lugares]: https://github.com/tmslnz/Dreamhost-Custom-Env
