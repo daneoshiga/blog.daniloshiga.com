@@ -103,15 +103,15 @@ considerando o caminho a partir da public.
 
 settings/dreamhost.py
 
-STATIC_ROOT = os.path.join(BASE_DIR, '..', '..', 'example.daniloshiga.com',
+    STATIC_ROOT = os.path.join(BASE_DIR, '..', '..', 'example.daniloshiga.com',
                            'public', 'static')
 
-STATIC_URL = '/static/'
+    STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, '..', '..', 'example.daniloshiga.com',
+    MEDIA_ROOT = os.path.join(BASE_DIR, '..', '..', 'example.daniloshiga.com',
                           'public', 'media')
 
-MEDIA_URL = '/media/'
+    MEDIA_URL = '/media/'
 
 [IaaS]: http://en.wikipedia.org/wiki/Infrastructure_as_a_service#Infrastructure_as_a_service_.28IaaS.29
 [como já foi feito em alguns lugares]: https://github.com/tmslnz/Dreamhost-Custom-Env
