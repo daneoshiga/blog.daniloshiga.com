@@ -40,8 +40,8 @@ de performance durante a leitura na HD (ou seja, ler um arquivo não
 envolve mais realizar uma escrita). O que provavelmente só vai ser
 notável em um processo de leitura de muitos arquivos.
 
-EDIT
-====
+Edit
+----
 
 Como apontado pelo [Douglas][] nos comentários, o noatime já implica o
 nodiratime, então se for feito o uso do primeiro, não é necessário usar o
