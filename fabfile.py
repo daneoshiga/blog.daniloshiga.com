@@ -1,4 +1,4 @@
-from fabric.api import *
+from fabric.api import local, env, hosts
 import fabric.contrib.project as project
 import os
 
@@ -8,7 +8,7 @@ DEPLOY_PATH = env.deploy_path
 
 # Remote server configuration
 production = 'dshiga@daniloshiga.com:22'
-dest_path = 'n'
+dest_path = 'blog.daniloshiga.com/public/'
 
 # Rackspace Cloud Files configuration settings
 env.cloudfiles_username = 'my_rackspace_username'
@@ -21,25 +21,32 @@ def clean():
         local('rm -rf {deploy_path}'.format(**env))
         local('mkdir {deploy_path}'.format(**env))
 
+
 def build():
     local('pelican -s pelicanconf.py')
+
 
 def rebuild():
     clean()
     build()
 
+
 def regenerate():
     local('pelican -r -s pelicanconf.py')
 
+
 def serve():
     local('cd {deploy_path} && python -m SimpleHTTPServer'.format(**env))
+
 
 def reserve():
     build()
     serve()
 
+
 def preview():
     local('pelican -s publishconf.py')
+
 
 def cf_upload():
     rebuild()
@@ -48,6 +55,7 @@ def cf_upload():
           '-U {cloudfiles_username} '
           '-K {cloudfiles_api_key} '
           'upload -c {cloudfiles_container} .'.format(**env))
+
 
 @hosts(production)
 def publish():
