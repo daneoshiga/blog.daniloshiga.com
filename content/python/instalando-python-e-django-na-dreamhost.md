@@ -150,3 +150,4 @@ de uma hospedagem como a [dreamhost][]
 [IaaS]: http://en.wikipedia.org/wiki/Infrastructure_as_a_service#Infrastructure_as_a_service_.28IaaS.29
 [como já foi feito em alguns lugares]: https://github.com/tmslnz/Dreamhost-Custom-Env
 [dreamhost]: http://www.dreamhost.com/r.cgi?1117908
+[passenger]: http://wiki.dreamhost.com/Passenger
