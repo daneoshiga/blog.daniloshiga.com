@@ -22,7 +22,7 @@ INSTALLED_APPS += (
         'django_extensions',
 ) 
 ```
-A partir daí, as telas de erro do Django ficaram assim:
+A partir daí` as telas d` erro do Django ficaram assim:
 
 ![Traceback do runserver_plus](/images/django/vantagens-ao-usar-runserverplus/runserverplus-traceback.png)
 
@@ -38,5 +38,15 @@ isso do traceback inteiro, você pode ter mais informações do fonte do própri
 Django
 
 ![Código Fonte](/images/django/vantagens-ao-usar-runserverplus/runserverplus-viewsource.png)
+
+E também é possível ver os comandos SQL gerados durante uma requisição passando
+o parametro "`--print-sql`" para o runserver_plus, que pode ser muito útil para
+visualizar o que o ORM do django está gerando, e encontrar locais onde o acesso
+ao banco pode estar gerando problemas.
+
+![Código Fonte](/images/django/vantagens-ao-usar-runserverplus/runserverplus-printsql.png)
+
+Essas são algumas vantagens que que o runserver_plus pode oferecer, são
+pequenos ganhos que ajudam na produtividade com Django.
 
 [Werkzeug]: http://werkzeug.pocoo.org/ 
