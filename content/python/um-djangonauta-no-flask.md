@@ -1,9 +1,8 @@
 Title: Um Djangonauta no Flask
-Date: 
+Date: 2015-05-14
 Author: daniloshiga
 Tags: python, web, flask
-Slug: um-djangonauta-no-flask 
-status: draft
+Slug: um-djangonauta-no-flask
 
 Quando saí do desenvolvimento com PHP fui diretamente para o Django, o ORM e
 admin foram suficientes para que convencer de que seria o framework ideal para
@@ -25,4 +24,6 @@ que foi bem tranquilo, já que ambos os pacotes tem uma boa documentação e sã
 simples de usar, de certo modo, mais simples que o do Django.
 
 Um lado negativo que vejo é que para conseguir desenvolver essa pequena
-aplicação tive que manter 3 documentações diferentes abertas.
+aplicação tive que manter 3 documentações diferentes abertas, e tive alguns
+problemas pra me acostumar com isso e as diferenças de como integrar as coisas,
+mas nada que um pouco de pratica não resolveria.
