@@ -3,7 +3,6 @@ Date: 2015-08-09
 Author: daniloshiga
 Tags: python, custom, infra
 Slug: instalando-python3-na-dreamhost
-status: draft
 
 Quase um ano depois de [instalar manualmente o python 2.7 e django na
 dreamhost]({filename}instalando-python-e-django-na-dreamhost.md), senti que era
@@ -58,6 +57,37 @@ $ which pip3
 $ which pyvenv-3.4
 /home/foo/python34/bin/pyvenv-3.4
 ```
+
+Nesse ponto chegamos no momento mais específico da Dreamhost, que é o uso do
+passenger para aplicações python.
+
+Ele utiliza um arquivo passenger_wsgi.py na raiz do domínio que é usado para
+definir o python que será usado pela aplicação e outras informações, ele
+depende de uma variável "application" que é a aplicação wsgi que irá rodar.
+
+```python
+import sys, os
+import logging
+cwd = os.getcwd()
+sys.path.append(cwd)
+
+INTERP = os.path.expanduser("~/venv/bin/python")
+
+if sys.executable != INTERP: os.execl(INTERP, INTERP, *sys.argv)
+
+sys.path.insert(0,'$HOME/my_project/my_project')
+sys.path.insert(0,'$HOME/venv/bin')
+sys.path.insert(0,'$HOME/venv/lib/python3.4/site-packages/django')
+sys.path.insert(0,'$HOME/venv/lib/python3.4/site-packages')
+
+os.environ['DJANGO_SETTINGS_MODULE'] = "my_project.settings"
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
+```
+
+E pronto, bem mais simples que o caso do python 2.7 e pronto para trabalhar
+numa versão mais "evoluída" do python, mesmo que a hospedagem em si ainda não
+esteja.
 
 
 [Deploying Django with virtualenv on Dreamhost]: http://brobin.me/blog/2015/3/22/deploying-django-with-virtualenv-on-dreamhost
