@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content_title %}{% endblock %}
 {% block content %}
-<div itemscope itemtype="http://schema.org/Blog">
+<div>
 {% if articles %}
     {% for article in articles_page.object_list %}
 
@@ -9,9 +9,9 @@
                 <section id="content" class="body">
                     <ol id="posts-list" start="{{ articles_paginator.per_page -1 }}">
             {% endif %}
-            <li itemprop="blogPosts" itemtype="http://schema.org/BlogPosting">
+            <li>
                 <hr class="unit span-grid">
-                <article>
+                <article itemscope itemtype="http://schema.org/BlogPosting">
                 <header>
                     <h1 itemprop="name headline"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
                            title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
